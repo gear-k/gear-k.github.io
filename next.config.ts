@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['img.shields.io'],
   },
+  output: 'export',
   webpack: (config) => {
     // Create an alias so that "tsparticles/Enums" maps to the main tsparticles module.
     config.resolve.alias['tsparticles/Enums'] = require.resolve('tsparticles')
